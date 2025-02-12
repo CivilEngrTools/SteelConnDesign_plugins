@@ -162,3 +162,22 @@ CET_SteelConnDesign\plugins
 - In this example:  
   - The dropdown list will show **Member_Property** and **Nominal_Hole_Dimension** as plugin names.  
   - Each folder has its own `plugin.py`, maintaining modular and organized code.
+
+# Plugins
+## Member Property  
+This plugin allows users to quickly check member properties without referring to book tables. It currently supports **AISC 13th, 14th, and 15th edition** shape data, including:  
+- **W-shapes**  
+- **Angles**  
+- **Rectangular HSS shapes**  
+
+![Member Property](https://private-user-images.githubusercontent.com/100242816/412650114-644f4b2f-a631-48c7-99a3-7f2ee83fdce0.png)  
+
+---
+
+## Nominal Hole Dimension  
+This plugin calculates hole dimensions based on **AISC 13th, 14th, and 15th editions**, referencing **Tables J3.3 and J3.3M**. It supports:  
+- **Imperial and metric units**  
+- **Standard, oversized, and slotted holes**  
+- **Visual representation of slotted hole dimensions**  
+
+![Nominal Hole Dimension]([https://private-user-images.githubusercontent.com/100242816/412650358-d6e3cd98-c77e-4ee4-99bc-5606beb6af02.png](https://private-user-images.githubusercontent.com/100242816/412650358-d6e3cd98-c77e-4ee4-99bc-5606beb6af02.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0MDIyODEsIm5iZiI6MTczOTQwMTk4MSwicGF0aCI6Ii8xMDAyNDI4MTYvNDEyNjUwMzU4LWQ2ZTNjZDk4LWM3N2UtNGVlNC05OWJjLTU2MDZiZWI2YWYwMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxMlQyMzEzMDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03Yjg0YjhmZWNhMTdlMmY1NDI0OWMyMzlhYWY5Y2MyYmEzMDUwN2FhMzBkZDVkNzU2YjE2MGM2OTlhMjk2NDBhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.lrjKmTCGk9FS11H9N5nZYhhKDtXuUxbzBOKpQ6OjVxk))  
