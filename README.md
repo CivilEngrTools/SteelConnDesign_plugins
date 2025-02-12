@@ -6,6 +6,8 @@ CET.SteelConnDesign embraces open-source principles for engineering and is explo
 
 Some plugins, such as the Member Property Plugin, require the “CET_MODULE.cp38-win_amd64.pyd” file, located in the CET.SteelConnDesign installation directory (`C:\Users\<User Name>\AppData\Roaming\CET_SteelConnDesign\`, replacing `<User Name>` with your actual username). However, this file is not necessary for developing your own plugins.
 
+# Development Setup
+
 ## Conda and Git Installation (Windows Only)  
 *Skip this section if Conda and Git are already installed on your computer.*
 
@@ -121,10 +123,11 @@ Some plugins, such as the Member Property Plugin, require the “CET_MODULE.cp38
  C:\Users\<User Name>\AppData\Roaming\CET_SteelConnDesign\plugins
  ```
  Your plugin will be **automatically loaded** when you run CET.SteelConnDesign and will appear in the plugins dropdown list.  
- - Refer to section **5.2.3** for details on the required file structure.  
+ - Refer to [User Manual](https://github.com/CivilEngrTools/SteelConnDesign/blob/main/User%20Manual.pdf) Section **5.2.3** for details on the required file structure.  
 
 2. To **update plugins**, run the following command in the plugin installation directory:  
  ```bash
  git pull https://github.com/CivilEngrTools/SteelConnDesign_plugins
  ```
 
+# Plugins
