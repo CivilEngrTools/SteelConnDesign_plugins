@@ -5,3 +5,126 @@ CET.SteelConnDesign is a FREE, cutting-edge steel connection design software bui
 CET.SteelConnDesign embraces open-source principles for engineering and is exploring the possibility of transitioning to an open-source model in the future. The introduction of plugins is our first step in this direction. This system is designed to offer valuable tools that assist users in their designs while also enabling them to share their innovative ideas with the community.  
 
 Some plugins, such as the Member Property Plugin, require the “CET_MODULE.cp38-win_amd64.pyd” file, located in the CET.SteelConnDesign installation directory (`C:\Users\<User Name>\AppData\Roaming\CET_SteelConnDesign\`, replacing `<User Name>` with your actual username). However, this file is not necessary for developing your own plugins.
+
+## Conda and Git Installation (Windows Only)  
+*Skip this section if Conda and Git are already installed on your computer.*
+
+---
+
+### Step 1: Download the Installer  
+- Go to the official [Anaconda](https://www.anaconda.com/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) website.  
+  - Download **Anaconda** for a full package or **Miniconda** for a minimal installation.  
+  - Choose the installer for your system (32-bit or 64-bit).  
+
+---
+
+### Step 2: Run the Installer  
+1. Double-click the downloaded `.exe` file to start the installation.  
+2. Follow the setup wizard:  
+   - Agree to the license agreement.  
+   - Choose **Just Me** (recommended) or **All Users**.  
+   - Select the installation location (default is fine).  
+
+---
+
+### Step 3: Configure PATH (Optional)  
+- When prompted, **do not** check the option to "Add Anaconda/Miniconda to my PATH environment variable" (recommended).  
+- Use the **Anaconda Prompt** or **Miniconda Prompt** instead to avoid conflicts.  
+
+---
+
+### Step 4: Complete Installation  
+1. Click **Install** and wait for the process to complete.  
+2. Launch the **Anaconda Prompt** or **Miniconda Prompt** from the Start Menu.  
+
+---
+
+### Step 5: Verify Installation  
+1. Open the **Anaconda Prompt** or **Miniconda Prompt**.  
+2. Run:  
+    ```bash
+    conda --version
+    ```
+
+---
+
+### Step 6: Setup Python 3.8.6  
+1. Create a new environment:  
+    ```bash
+    conda create -n py38 python=3.8
+    ```
+2. Activate the environment:  
+    ```bash
+    conda activate py38
+    ```
+
+## Plugin Development  
+
+---
+
+### Step 1: Add Packages to Python  
+1. Install Git:  
+    ```bash
+    conda install git
+    ```
+2. Install PySide2:  
+    ```bash
+    pip install PySide2
+    ```
+
+---
+
+### Step 2: Run Plugins  
+1. Install **CET.SteelConnDesign V1.10** or a later version and ensure `CET_MODULE.cp38-win_amd64.pyd` is in the following directory: `C:\Users<User Name>\AppData\Roaming\CET_SteelConnDesign\` *(Replace `<User Name>` with your actual username.)*  
+
+2. Clone the plugin repository:  
+ ```bash
+ git clone https://github.com/CivilEngrTools/SteelConnDesign_plugins
+ ```
+
+3. Open the cloned directory in **VSCode** and run `test_plugins.py`.  
+
+---
+
+### Step 3: Contribute to Code  
+1. Ensure you have a **GitHub account** and fork the [SteelConnDesign_plugins](https://github.com/CivilEngrTools/SteelConnDesign_plugins) repository.  
+2. Clone the forked repository to a **different local directory** (different from Step 2):  
+ ```bash
+ git clone <your-forked-repo-url>
+ ```
+3. Create a new branch:  
+ ```bash
+ git checkout -b <new-branch-name>
+ ```
+4. Develop a new plugin or make your changes.  
+5. Commit and push your changes after testing:  
+ ```bash
+ git add .
+ git commit -m "Description of changes"
+ git push origin <new-branch-name>
+ ```
+6. **Create a pull request:**  
+- Go to your forked repository on GitHub.  
+- Click **Compare & pull request**.  
+- Add a title and description.  
+- Ensure the base repository is the original project with `main` (or `master`) as the base branch.  
+- Submit the pull request.  
+
+7. Once your pull request is approved, your plugins will appear in the next release.  
+- You can still use them locally. Refer to **Step 4** for details.  
+
+---
+
+### Step 4: Update Plugins  
+1. If you have developed your own plugins, copy them to the following directory after testing:  
+ ```
+ C:\Users\<User Name>\AppData\Roaming\CET_SteelConnDesign\plugins
+ ```
+ Your plugin will be **automatically loaded** when you run CET.SteelConnDesign and will appear in the plugins dropdown list.  
+ - Refer to section **5.2.3** for details on the required file structure.  
+
+2. To **update plugins**, run the following command in the plugin installation directory:  
+ ```bash
+ git pull https://github.com/CivilEngrTools/SteelConnDesign_plugins
+ ```
+
