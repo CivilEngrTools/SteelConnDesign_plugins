@@ -130,4 +130,35 @@ Some plugins, such as the Member Property Plugin, require the “CET_MODULE.cp38
  git pull https://github.com/CivilEngrTools/SteelConnDesign_plugins
  ```
 
-# Plugins
+# Plugin Structure  
+
+Plugins are organized using folders and files, where the **folder name** corresponds to the plugin name displayed in the plugin dropdown list.  
+
+---
+
+## Folder and File Requirements  
+- Each **plugin folder** must include a `plugin.py` file.  
+- In `plugin.py`, specify the following fields:  
+  - `author`: Name of the plugin creator.  
+  - `description`: Brief description of the plugin's functionality.  
+  - `category`: Category under which the plugin will be grouped.  
+  - `load_order`: Order in which the plugin is loaded.  
+
+- Ensure the class is named:  
+    ```python
+    PluginUI(QWidget)
+    ```
+
+---
+
+## Example Structure  
+CET_SteelConnDesign\plugins  
+&nbsp;  
+----Member_Property  
+&nbsp; &nbsp; |----plugin.py  
+----Nominal_Hole_Dimension  
+&nbsp; &nbsp; |----plugin.py 
+
+- In this example:  
+  - The dropdown list will show **Member_Property** and **Nominal_Hole_Dimension** as plugin names.  
+  - Each folder has its own `plugin.py`, maintaining modular and organized code.
