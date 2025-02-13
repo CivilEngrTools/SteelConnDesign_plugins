@@ -180,4 +180,4 @@ This plugin calculates hole dimensions based on **AISC 13th, 14th, and 15th edit
 - **Standard, oversized, and slotted holes**  
 - **Visual representation of slotted hole dimensions**  
 
-![Nominal Hole Dimension](https://gist.github.com/user-attachments/assets/495b283e-d207-4165-8d07-a6b03f037e71)
+![](./.github/images/hole_diameter.PNG)
