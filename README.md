@@ -1,5 +1,28 @@
 <h1 style="text-align: center;">The Plugin System of CET.SteelConnDesign</h1>
 
+### Table of Contents
+
+1. [Introduction](#introduction)
+2. Development Setup (Windows Only)
+   - [Conda and Git Installation](#conda-and-git-installation)
+   - [Step 1: Download the Installer](#step-1-download-the-installer)
+   - [Step 2: Run the Installer](#step-2-run-the-installer)
+   - [Step 3: Configure PATH (Optional)](#step-3-configure-path-optional)
+   - [Step 4: Complete Installation](#step-4-complete-installation)
+   - [Step 5: Verify Installation](#step-5-verify-installation)
+   - [Step 6: Setup Python 3.8.6](#step-6-setup-python-386)
+3. Plugin Development
+   - [Step 1: Add Packages to Python](#step-1-add-packages-to-python)
+   - [Step 2: Run Plugins](#step-2-run-plugins)
+   - [Step 3: Contribute to Code](#step-3-contribute-to-code)
+   - [Step 4: Update Plugins](#step-4-update-plugins)
+4. Plugin Structure
+   - [Folder and File Requirements](#folder-and-file-requirements)
+   - [Example Structure](#example-structure)
+5. Existing Plugins
+   - [Member Property](#member-property)
+   - [Nominal Hole Dimension](#nominal-hole-dimension)
+
 # Introduction
 
 **[CET.SteelConnDesign](https://github.com/CivilEngrTools/SteelConnDesign)** is a FREE, cutting-edge steel connection design software built on the AISC 13th/14th/15th standards and powered by modern mathematical theories, providing users with a powerful design solution.  
