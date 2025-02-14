@@ -77,7 +77,7 @@ Some plugins, such as the Member Property Plugin, require the “CET_MODULE.cp38
 ---
 
 ### Step 2: Run Plugins  
-1. Install **CET.SteelConnDesign V1.10** or a later version and ensure `CET_MODULE.cp38-win_amd64.pyd` is in the following directory: `C:\Users<User Name>\AppData\Roaming\CET_SteelConnDesign\` *(Replace `<User Name>` with your actual username.)*  
+1. **Install** **[CET.SteelConnDesign V1.10](https://github.com/CivilEngrTools/SteelConnDesign/releases/tag/1.10)** or a later version and ensure `CET_MODULE.cp38-win_amd64.pyd` is in the following directory: `C:\Users<User Name>\AppData\Roaming\CET_SteelConnDesign\` *(Replace `<User Name>` with your actual username.)*  
 
 2. Clone the plugin repository:  
  ```bash
