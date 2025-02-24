@@ -5,6 +5,9 @@ import json
 import sys, os
 module_path = os.getenv('APPDATA') + "/CET_SteelConnDesign"
 
+if not os.path.exists(module_path):
+    module_path = "../"
+
 # Add to sys.path
 if module_path not in sys.path:
     sys.path.insert(0, module_path)
