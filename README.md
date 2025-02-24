@@ -175,13 +175,7 @@ Plugins are organized using folders and files, where the **folder name** corresp
 ---
 
 ## Example Structure  
-CET_SteelConnDesign\plugins  
-&nbsp;
-├── plugins/
-│   ├── Member_Property/
-│   │   └── plugin.py
-│   ├── Nominal_Hole_Dimension/
-│   │   └── plugin.py
+<img src="./.github/images/folder_structure.PNG" style="zoom:100%;" />&nbsp;
 
 - In this example:  
   - The dropdown list will show **Member_Property** and **Nominal_Hole_Dimension** as plugin names.  
