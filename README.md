@@ -178,11 +178,12 @@ Plugins are organized using folders and files, where the **folder name** corresp
 
 ## Example Structure  
 CET_SteelConnDesign\plugins  
-&nbsp;  
-----Member_Property  
-&nbsp; &nbsp; |----plugin.py  
-----Nominal_Hole_Dimension  
-&nbsp; &nbsp; |----plugin.py 
+&nbsp;
+├── plugins/
+│   ├── Member_Property/
+│   │   └── plugin.py
+│   ├── Nominal_Hole_Dimension/
+│   │   └── plugin.py
 
 - In this example:  
   - The dropdown list will show **Member_Property** and **Nominal_Hole_Dimension** as plugin names.  
